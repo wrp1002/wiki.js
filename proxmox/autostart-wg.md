@@ -2,7 +2,7 @@
 title: autostart-wg
 description: 
 published: 1
-date: 2023-11-06T15:54:45.743Z
+date: 2023-11-06T15:55:17.070Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T02:24:30.819Z
@@ -10,7 +10,7 @@ dateCreated: 2023-11-06T02:24:30.819Z
 
 # Autostart WireGuard in systemd
 
-[original source](https://www.ivpn.net/knowledgebase/linux/linux-autostart-wireguard-in-systemd/)
+https://www.ivpn.net/knowledgebase/linux/linux-autostart-wireguard-in-systemd/
 
 These steps are mostly distribution agnostic and have been tested on Debian unstable and Fedora.
 
