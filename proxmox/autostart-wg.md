@@ -1,11 +1,11 @@
 ---
-title: autostart-wg
+title: autostart wg
 description: 
 published: 1
-date: 2023-11-06T15:55:17.070Z
+date: 2023-11-06T16:41:52.262Z
 tags: 
 editor: markdown
-dateCreated: 2023-11-06T02:24:30.819Z
+dateCreated: 2023-11-06T16:41:52.262Z
 ---
 
 # Autostart WireGuard in systemd
