@@ -2,7 +2,7 @@
 title: autostart-wg
 description: 
 published: 1
-date: 2023-11-06T15:48:55.803Z
+date: 2023-11-06T15:54:45.743Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T02:24:30.819Z
@@ -10,11 +10,15 @@ dateCreated: 2023-11-06T02:24:30.819Z
 
 # Autostart WireGuard in systemd
 
+[original source](https://www.ivpn.net/knowledgebase/linux/linux-autostart-wireguard-in-systemd/)
+
 These steps are mostly distribution agnostic and have been tested on Debian unstable and Fedora.
 
 1. Generate a valid and working WireGuard configuration file /etc/wireguard/wg0.conf. Our setup guide offers details.
 
 > Note: You may have to replace the Endpoint hostname with the WireGuard server IP address in the WireGuard configuration file. DNS may or may not be applied when systemd brings the wg0 interface up.
+{.is-warning}
+
 
 2. Add the WireGuard service to systemd:
 
