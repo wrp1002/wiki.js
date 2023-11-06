@@ -2,7 +2,7 @@
 title: autostart-wg
 description: 
 published: 1
-date: 2023-11-06T15:46:38.772Z
+date: 2023-11-06T15:46:49.052Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T02:24:30.819Z
