@@ -1,0 +1,33 @@
+<!--
+title: autostart-wg
+description: 
+published: 1
+date: 2023-11-06T02:29:34.433Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-11-06T02:24:30.819Z
+-->
+
+<h1>Autostart WireGuard in systemd</h1>
+<p>These steps are mostly distribution agnostic and have been tested on Debian unstable and Fedora.</p>
+<p>&nbsp;</p>
+<p>1. &nbsp; &nbsp;Generate a valid and working WireGuard configuration file /etc/wireguard/wg0.conf. Our setup guide offers details.</p>
+<blockquote>
+  <p>&nbsp; &nbsp;Note: You may have to replace the Endpoint hostname with the WireGuard server IP address in the WireGuard configuration file. DNS may or may not be applied when systemd brings the wg0 interface up.</p>
+</blockquote>
+<p>2. &nbsp; &nbsp;Add the WireGuard service to systemd:</p>
+<pre><code class="language-plaintext">   sudo systemctl enable wg-quick@wg0.service
+   sudo systemctl daemon-reload</code></pre>
+<p>3. &nbsp; Start the new service immediately:</p>
+<pre><code class="language-plaintext">   sudo systemctl start wg-quick@wg0</code></pre>
+<p>4. &nbsp; Reboot your computer system to verify the automatic connection on startup works as expected.</p>
+<p>5. &nbsp; Check the service status:</p>
+<pre><code class="language-plaintext">   systemctl status wg-quick@wg0</code></pre>
+<p>6. &nbsp; To remove the service and clean up the system:</p>
+<pre><code class="language-plaintext">   sudo systemctl stop wg-quick@wg0
+   sudo systemctl disable wg-quick@wg0.service
+   sudo rm -i /etc/systemd/system/wg-quick@wg0*
+   sudo systemctl daemon-reload
+   sudo systemctl reset-failed</code></pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
