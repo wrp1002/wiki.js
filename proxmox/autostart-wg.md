@@ -1,8 +1,8 @@
 ---
-title: autostart wg
+title: autostart wireguard
 description: 
 published: 1
-date: 2023-11-06T16:41:52.262Z
+date: 2023-11-09T05:12:39.083Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-06T16:41:52.262Z
