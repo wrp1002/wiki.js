@@ -2,7 +2,7 @@
 title: ESP8266 OTA Update Bin
 description: 
 published: 1
-date: 2023-11-09T05:38:15.719Z
+date: 2023-11-10T16:27:38.319Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-09T05:38:15.719Z
@@ -48,26 +48,14 @@ Then upload to the board:
 ./arduino-cli upload -p <arduino ip> --input-file <path to bin> --fqbn esp8266:esp8266:generic
 ```
 
+If it asks for a password and you haven't set one, just press enter to continue
+
 It should output something like:
 
 ```
-esptool.py v3.0
-Serial port /dev/ttyUSB0
-Connecting....
-Chip is ESP8266EX
-Features: WiFi
-Crystal is 26MHz
-MAC: 4c:75:25:37:40:e5
-Uploading stub...
-Running stub...
-Stub running...
-Configuring flash size...
-Auto-detected Flash size: 4MB
-Compressed 289216 bytes to 210989...
-Wrote 289216 bytes (210989 compressed) at 0x00000000 in 18.6 seconds (effective 124.3 kbit/s)...
-Hash of data verified.
-
-Leaving...
-Hard resetting via RTS pin...
+Uploading to specified board using network protocol requires the following info:
+Password: 
+Uploading..............................................................................................................................................................................................................................................................................................................................................................................
+New upload port: 10.0.0.187 (network)
 ```
 
